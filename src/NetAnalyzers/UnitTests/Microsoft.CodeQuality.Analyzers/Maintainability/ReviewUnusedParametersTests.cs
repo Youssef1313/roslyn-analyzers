@@ -803,7 +803,7 @@ Imports System
 
 Public Class C
     ' _ is not an allowed identifier in VB.
-    Public Sub M(_1 As Integer, _2 As Integer, _4 As Integer)
+    Public Sub M(_1 As Integer, _2 As Integer, _4 As Integer, _name As Integer)
     End Sub
 End Class
 ");
