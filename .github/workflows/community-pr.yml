@@ -8,12 +8,12 @@ permissions:
 jobs:
   add_community_label:
     runs-on: ubuntu-latest
-    if: ${{ github.repository == 'dotnet/roslyn-analyzers' && github.event.pull_request.user.login != 'dotnet-bot' && github.event.pull_request.user.login != 'dotnet-maestro[bot]' }}
+    if: ${{ github.event.pull_request.user.login != 'dotnet-bot' && github.event.pull_request.user.login != 'dotnet-maestro[bot]' }}
     steps:
     - name: Get data
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        ORGANIZATION: dotnet
+        ORGANIZATION: Youssef1313
         REPOSITORY: roslyn-analyzers
         LABEL_NAME: Community
         PULL_REQUEST_NUMBER: ${{ github.event.pull_request.number }}
