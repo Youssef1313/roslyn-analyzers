@@ -13,7 +13,7 @@ jobs:
     - name: Get data
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        ORGANIZATION: Youssef1313
+        ORGANIZATION: dotnet
         REPOSITORY: roslyn-analyzers
         LABEL_NAME: Community
         PULL_REQUEST_NUMBER: ${{ github.event.pull_request.number }}
